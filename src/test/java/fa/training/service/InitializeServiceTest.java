@@ -94,4 +94,62 @@ class InitializeServiceTest {
             });
         }
     }
+
+    @Disabled()
+    @Test()
+    void createDateWhenValidatorUtilsNotFutureValue2() throws ParseException {
+        try (MockedStatic<ValidatorUtils> validatorUtils = mockStatic(ValidatorUtils.class)) {
+            Date date = new Date();
+            validatorUtils.when(() -> ValidatorUtils.stringToDate("A")).thenReturn(date);
+            validatorUtils.when(() -> ValidatorUtils.notFuture(date)).thenReturn(false);
+            Date date2 = new Date();
+            validatorUtils.when(() -> ValidatorUtils.stringToDate("B")).thenReturn(date2);
+            validatorUtils.when(() -> ValidatorUtils.notFuture(date2)).thenReturn(true);
+            Date result = InitializeService.createDate();
+            assertAll("result", () -> {
+                assertThat(result, equalTo(date2));
+                validatorUtils.verify(() -> ValidatorUtils.stringToDate("A"), atLeast(1));
+                validatorUtils.verify(() -> ValidatorUtils.notFuture(date), atLeast(1));
+                validatorUtils.verify(() -> ValidatorUtils.stringToDate("B"), atLeast(1));
+                validatorUtils.verify(() -> ValidatorUtils.notFuture(date2), atLeast(1));
+            });
+        }
+    }
+
+    @Disabled()
+    @Test()
+    void createDateWhenValidatorUtilsNotFutureValue3() throws ParseException {
+        try (MockedStatic<ValidatorUtils> validatorUtils = mockStatic(ValidatorUtils.class)) {
+            Date date = new Date();
+            validatorUtils.when(() -> ValidatorUtils.stringToDate("A")).thenReturn(date);
+            validatorUtils.when(() -> ValidatorUtils.notFuture(date)).thenReturn(true);
+            Date result = InitializeService.createDate();
+            assertAll("result", () -> {
+                assertThat(result, equalTo(date));
+                validatorUtils.verify(() -> ValidatorUtils.stringToDate("A"), atLeast(1));
+                validatorUtils.verify(() -> ValidatorUtils.notFuture(date), atLeast(1));
+            });
+        }
+    }
+
+    @Disabled()
+    @Test()
+    void createDateWhenValidatorUtilsNotFutureValue4() throws ParseException {
+        try (MockedStatic<ValidatorUtils> validatorUtils = mockStatic(ValidatorUtils.class)) {
+            Date date = new Date();
+            validatorUtils.when(() -> ValidatorUtils.stringToDate("A")).thenReturn(date);
+            validatorUtils.when(() -> ValidatorUtils.notFuture(date)).thenReturn(false);
+            Date date2 = new Date();
+            validatorUtils.when(() -> ValidatorUtils.stringToDate("B")).thenReturn(date2);
+            validatorUtils.when(() -> ValidatorUtils.notFuture(date2)).thenReturn(false);
+            Date result = InitializeService.createDate();
+            assertAll("result", () -> {
+                assertThat(result, equalTo(date2));
+                validatorUtils.verify(() -> ValidatorUtils.stringToDate("A"), atLeast(1));
+                validatorUtils.verify(() -> ValidatorUtils.notFuture(date), atLeast(1));
+                validatorUtils.verify(() -> ValidatorUtils.stringToDate("B"), atLeast(1));
+                validatorUtils.verify(() -> ValidatorUtils.notFuture(date2), atLeast(1));
+            });
+        }
+    }
 }

@@ -125,4 +125,20 @@ public class MagazineServiceTest {
 
         Assertions.assertEquals(10, ManazineService.magazineList.size());
     }
+
+    @Test
+    public void testGetTop10WithMoreThan10AndDuplicateAndSortWithMoreThan10() {
+        for (int i = 0; i < 15; i++) {
+            Magazine magazine = new Magazine(2022, "Publisher" + i, new Date(), "Author" + i, i, i);
+            ManazineService.addMagazine(magazine);
+
+            if (i < 5) {
+                ManazineService.addMagazine(magazine);
+            }
+
+        }
+
+        Assertions.assertEquals(10, ManazineService.magazineList.size());
+
+    }
 }

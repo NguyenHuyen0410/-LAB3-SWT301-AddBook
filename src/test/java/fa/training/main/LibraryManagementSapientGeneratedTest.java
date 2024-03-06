@@ -43,4 +43,21 @@ class LibraryManagementSapientGeneratedTest {
             });
         }
     }
+
+    @Disabled()
+    @Test()
+    void getChoiceWhenOptionsIsEmpty() {
+        Readable readableMock = mock(Readable.class);
+        try (MockedStatic<ScannerUtils> scannerUtils = mockStatic(ScannerUtils.class)) {
+            Scanner scanner = new Scanner(readableMock);
+            scannerUtils.when(() -> ScannerUtils.getInstance()).thenReturn(scanner);
+            List<String> stringList = new ArrayList<>();
+            int result = LibraryManagement.getChoice(stringList);
+            assertAll("result", () -> {
+                assertThat(result, equalTo(0));
+                scannerUtils.verify(() -> ScannerUtils.getInstance(), atLeast(1));
+            });
+        }
+    }
+
 }

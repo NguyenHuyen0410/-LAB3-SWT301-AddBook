@@ -18,4 +18,10 @@ class ScannerUtilsGeneratedTest {
         Scanner result = ScannerUtils.getInstance();
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
+
+    @Test()
+    void getInstanceWhenScannerIsNotNull() {
+        Scanner result = ScannerUtils.getInstance();
+        assertAll("result", () -> assertThat(result, is(notNullValue())));
+    }
 }

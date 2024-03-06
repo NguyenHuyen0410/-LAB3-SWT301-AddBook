@@ -276,4 +276,142 @@ public void testNotFutureWithFutureDateAndCurrentDate() {
         assertTrue(ValidatorUtils.notFuture(currentDate));
         assertFalse(ValidatorUtils.notFuture(null));
     }
+
+    @Test
+    public void testNotFutureWithNullAndPastDateAndCurrentDate() {
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        Date currentDate = new Date();
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithFutureDateAndNullAndPastDate() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithFutureDateAndPastDateAndNull() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithPastDateAndNullAndFutureDate() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithPastDateAndFutureDateAndNull() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithCurrentDateAndNullAndFutureDate() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date currentDate = new Date();
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithCurrentDateAndNullAndPastDate() {
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        Date currentDate = new Date();
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithCurrentDateAndPastDateAndNull() {
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        Date currentDate = new Date();
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithNullAndFutureDateAndPastDateAndCurrentDate() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        Date currentDate = new Date();
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithNullAndPastDateAndFutureDateAndCurrentDate() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        Date currentDate = new Date();
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithNullAndCurrentDateAndFutureDateAndPastDate() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        Date currentDate = new Date();
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithNullAndCurrentDateAndPastDateAndFutureDate() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        Date currentDate = new Date();
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithNullAndPastDateAndCurrentDateAndFutureDate() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        Date currentDate = new Date();
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
+
+    @Test
+    public void testNotFutureWithNullAndFutureDateAndCurrentDateAndPastDate() {
+        Date futureDate = new Date(System.currentTimeMillis() + 1000);
+        Date pastDate = new Date(System.currentTimeMillis() - 1000);
+        Date currentDate = new Date();
+        assertFalse(ValidatorUtils.notFuture(futureDate));
+        assertTrue(ValidatorUtils.notFuture(pastDate));
+        assertTrue(ValidatorUtils.notFuture(currentDate));
+        assertFalse(ValidatorUtils.notFuture(null));
+    }
 }

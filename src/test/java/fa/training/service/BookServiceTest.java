@@ -58,4 +58,295 @@ class BookServiceTest {
     void addAuthorBookWhenBookListIsEmpty() {
         BookService.addAuthorBook("author1", "isbn1");
     }
+
+    @Test()
+    void addAuthorBookWhenBookListIsNotEmpty() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthorBookWhenAuthorExisted() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author1");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor1() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor2() {
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor3() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor4() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author1");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor5() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor6() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor7() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor8() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor9() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor10() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor11() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor12() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor13() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor14() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor15() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor16() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor17() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor18() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor19() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor20() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor21() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor22() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor23() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor24() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor25() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor26() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor27() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor28() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor29() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor30() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
+
+    @Test()
+    void addAuthor31() {
+        Book book = new Book();
+        book.setIsbn("isbn1");
+        book.setPublisher("author2");
+        BookService.addBook(book);
+        BookService.addAuthorBook("author1", "isbn1");
+    }
 }

@@ -1,17 +1,9 @@
 
 E
 java:S37405"/Provide the parametrized type for this generic.(™õÎË
-:
-java:S2386	"Make this member "protected".(¦ÿÈ¹8ŽŽœ”á1
 E	java:S106"+Replace this use of System.out by a logger.(”æÏ÷þÿÿÿÿ
 @	java:S106"+Replace this use of System.out by a logger.(¨ýŠÙ
-o
-java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(êžºŠ8¿Žœ”á1
-s
-java:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(êžºŠ8ÆŽœ”á1
 E	java:S106#"+Replace this use of System.out by a logger.(ÌÁ¶ßúÿÿÿÿ
-t
-java:S6204)"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ëôëýøÿÿÿÿ8ÔŽœ”á1
 E	java:S106-"+Replace this use of System.out by a logger.(ÌÁ¶ßúÿÿÿÿ
 @	java:S1068"+Replace this use of System.out by a logger.(²Ñ¤”
 E	java:S106="+Replace this use of System.out by a logger.(”æÏ÷þÿÿÿÿ
