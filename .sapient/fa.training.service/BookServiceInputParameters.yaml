@@ -1,0 +1,621 @@
+---
+modelFingerprint: "A62540A65712D13736908887FD66D775"
+methods:
+- method:
+    name: "addBook"
+    returnType: "void"
+    signature: "addBook(fa.training.entity.Book) : void"
+    instructionFingerprint: "EF56E61DAAB551B37ED98030B47D9098"
+    parametersTypes:
+    - "fa.training.entity.Book"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "addBookWhenGetBookByIsbnBGetIsbnIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CE79F8B09B811418A82A55E3410ECF25"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "B5BF775E9A4F84CEBEC9AFE1E19A454E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "fa.training.entity.Book"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            isbn:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "isbn1"
+              valueType: "java.lang.String"
+              uuid: "addBook_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "fa.training.entity.Book"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            isbn:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "addBook_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "fa.training.entity.Book"
+        uuid: "addBook_book1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "b"
+      modelFingerprint: "A9C742DF63C84596DB487C7A4B0E3FBE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "fa.training.entity.Book"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            isbn:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "isbn1"
+              valueType: "java.lang.String"
+              uuid: "addBook_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "fa.training.entity.Book"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            isbn:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "addBook_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "fa.training.entity.Book"
+        uuid: "addBook_book1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "b"
+        name: "getIsbn"
+        parameters: []
+        signature: "getIsbn(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "isbn1"
+          valueType: "java.lang.String"
+          uuid: "addBook_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1ca9c416-c4e5-338b-bea6-db2bc01bd06b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getBookByIsbn"
+    returnType: "java.util.Optional"
+    signature: "getBookByIsbn(java.lang.String) : java.util.Optional<fa.training.entity.Book>"
+    instructionFingerprint: "CB012CD96F5C54C5724D277A15952F47"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getBookByIsbnTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E259237B2004EF9480621C84D4BDD6E1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "isbn"
+      modelFingerprint: "4D7F8FB91181E6D1D84F6CB9EBA7FE5E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "isbn1"
+        valueType: "java.lang.String"
+        uuid: "getBookByIsbn_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AE5A9588E5147E2D3720B0D3802E552A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OPTIONAL"
+        content: !<optional>
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          target: "java.util.Optional"
+        valueType: "java.util.Optional"
+        genericValueType: "fa.training.entity.Book"
+        uuid: "getBookByIsbn_optional1"
+        fixed: false
+        collectionUuid: "getBookByIsbn_list1"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ded5309f-9a42-3c2c-a0e4-f809c7ca785b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "searchBook"
+    returnType: "void"
+    signature: "searchBook(java.lang.String) : void"
+    instructionFingerprint: "897C5E52BB6CBD9EBF6C3FE465C010C9"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "searchBookWhenListNotIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "827B5E1517CD9920C516BB7F87D19BC3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "788B1B6D16024D16D347A7FC6AA46DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "searchBook_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "6E6817F124428F18B3038F85DBBA2D71"
+      index: 2
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "fa.training.entity.Book"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "fa.training.entity.Book"
+        uuid: "searchBook_book1"
+        fixed: false
+        collectionUuid: "searchBook_object1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.entity.Book"
+        name: "display"
+        parameters: []
+        signature: "display(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "searchBook_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1cdb33ea-67d4-3877-97a0-1c3fbe7ef540"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "searchBookWhenListIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D4EB2884154772018163CC3FFC1CD9E5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "788B1B6D16024D16D347A7FC6AA46DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "searchBook_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "966c9492-b55b-39c5-8006-6761c0a5baaa"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getBookByYearAndPublisher"
+    returnType: "void"
+    signature: "getBookByYearAndPublisher(java.lang.String,int) : void"
+    instructionFingerprint: "FCE1E63928D7BF7910744B2A8C84C953"
+    parametersTypes:
+    - "java.lang.String"
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getBookByYearAndPublisherWhenListNotIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "607685CF66BBF8E83AA70FD1A7EACF50"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "publister"
+      modelFingerprint: "C3AA6A6F846F93EEBEC0D63BF2BB2CFB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "publister1"
+        valueType: "java.lang.String"
+        uuid: "getBookByYearAndPublisher_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "year"
+      modelFingerprint: "53D3CF8E5204FDFE1335BC126CE15FEF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "getBookByYearAndPublisher_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "6E6817F124428F18B3038F85DBBA2D71"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "fa.training.entity.Book"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "fa.training.entity.Book"
+        uuid: "getBookByYearAndPublisher_book1"
+        fixed: false
+        collectionUuid: "getBookByYearAndPublisher_object1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.entity.Book"
+        name: "display"
+        parameters: []
+        signature: "display(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "getBookByYearAndPublisher_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "69182a72-29d4-36f6-988c-81dff96a15f6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getBookByYearAndPublisherWhenListIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4EF01264023A81A464F828D9C96A1774"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "publister"
+      modelFingerprint: "C3AA6A6F846F93EEBEC0D63BF2BB2CFB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "publister1"
+        valueType: "java.lang.String"
+        uuid: "getBookByYearAndPublisher_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "year"
+      modelFingerprint: "53D3CF8E5204FDFE1335BC126CE15FEF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "getBookByYearAndPublisher_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "74ef4a45-0f00-362b-878a-5cefa0f6e93f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "addAuthorBook"
+    returnType: "void"
+    signature: "addAuthorBook(java.lang.String,java.lang.String) : void"
+    instructionFingerprint: "2D55C4C1CC12623A3A61115847B9F1B6"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "addAuthorBookWhenBookListIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "29ED676D95BC5D373238E5AC03301F28"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "author"
+      modelFingerprint: "E8643FFC8FEC7F460CD04D1592B6E23C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "author1"
+        valueType: "java.lang.String"
+        uuid: "addAuthorBook_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "isbn"
+      modelFingerprint: "4D7F8FB91181E6D1D84F6CB9EBA7FE5E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "isbn1"
+        valueType: "java.lang.String"
+        uuid: "addAuthorBook_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "83ebf633-01ed-3c3b-a4f6-bdb19b7e102e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

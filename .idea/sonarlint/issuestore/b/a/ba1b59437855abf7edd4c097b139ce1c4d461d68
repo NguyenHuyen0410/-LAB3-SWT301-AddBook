@@ -1,0 +1,12 @@
+
+?
+java:S2386"Make this member "protected".(­ÊËÓøÿÿÿÿ8í“œ”á1
+E	java:S106"+Replace this use of System.out by a logger.(”æÏ÷þÿÿÿÿ
+t
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(—ºÞ®úÿÿÿÿ8þ“œ”á1
+E	java:S106"+Replace this use of System.out by a logger.(ÌÁ¶ßúÿÿÿÿ
+o
+java:S6204 "RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(™¹Æ”8Š”œ”á1
+E	java:S106$"+Replace this use of System.out by a logger.(ÌÁ¶ßúÿÿÿÿ
+V
+java:S1128"4Remove this unused import 'fa.training.entity.Book'.(ÁÒ©×øÿÿÿÿ8“”œ”á1

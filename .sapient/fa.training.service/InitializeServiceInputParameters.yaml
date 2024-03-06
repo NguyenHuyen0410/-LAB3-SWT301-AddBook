@@ -1,0 +1,1185 @@
+---
+modelFingerprint: "B32F4A223F97722FD1A29515EF800BAC"
+methods:
+- method:
+    name: "createStringValue"
+    returnType: "java.lang.String"
+    signature: "createStringValue() : java.lang.String"
+    instructionFingerprint: "6CB30B3CC98D1FFB101AB735D517C5D0"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createStringValueWhenValidatorUtilsIsValueValue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0ADA6233CC4E6E1FF4F56FD9F1DF615F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "AB9594771EB2765CB70823DEF3590D7D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          valueType: "java.util.Scanner"
+          uuid: "createStringValue_scanner1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "170BAA2F151CC477D9840DD1BAB6020B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "isValue"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "createStringValue_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValue(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "createStringValue_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "BCAF1333B8FD89D2E42C34124911ED44"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.String"
+        uuid: "createStringValue_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "014ed8e9-19bf-33b4-98a2-65560c8f01c9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "createStringValueWhenValidatorUtilsNotIsValueValue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A265AFC26758A3D675E8AF45E59FA0A0"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "AB9594771EB2765CB70823DEF3590D7D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          valueType: "java.util.Scanner"
+          uuid: "createStringValue_scanner1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "356576543976230A8F9D42E049570735"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "isValue"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "createStringValue_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValue(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "createStringValue_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "AB9594771EB2765CB70823DEF3590D7D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          valueType: "java.util.Scanner"
+          uuid: "createStringValue_scanner2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "E3C172B1CF33120442BF1BB5D9C1EB81"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "isValue"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "B"
+            suggestedContent: !<regular>
+              value: "B"
+            valueType: "java.lang.String"
+            uuid: "createStringValue_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValue(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "createStringValue_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2CBF3F11486C933E42A6B32458A6C5E9"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "B"
+        suggestedContent: !<regular>
+          value: "B"
+        valueType: "java.lang.String"
+        uuid: "createStringValue_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9bfb3a09-3575-3d44-bb79-5fd6aa008feb"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "createIntValue"
+    returnType: "int"
+    signature: "createIntValue() : int"
+    instructionFingerprint: "4A516262213F3B123C03B696DD768BD8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createIntValueWhenValidatorUtilsIsNumberValue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7E0C9210205440AC573C41D4D0841E59"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "AB9594771EB2765CB70823DEF3590D7D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          valueType: "java.util.Scanner"
+          uuid: "createIntValue_scanner1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "5237E3F74FA94F6A7EBF9ADEB2AE2B4F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "isNumber"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "0"
+            suggestedContent: !<regular>
+              value: "0"
+            valueType: "java.lang.String"
+            uuid: "createIntValue_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isNumber(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "createIntValue_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "231276223B3DD65935C1F8594364B51A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "createIntValue_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d26207fa-7826-3b44-81c1-dbeffbb493f4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "createIntValueWhenValidatorUtilsNotIsNumberValue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F9047F695DD892492CFDD70B567BF5DB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "AB9594771EB2765CB70823DEF3590D7D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          valueType: "java.util.Scanner"
+          uuid: "createIntValue_scanner1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "689CA87EC3B7A304780BB3652258335B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "isNumber"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "createIntValue_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isNumber(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "createIntValue_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "AB9594771EB2765CB70823DEF3590D7D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          valueType: "java.util.Scanner"
+          uuid: "createIntValue_scanner2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "5237E3F74FA94F6A7EBF9ADEB2AE2B4F"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "isNumber"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "0"
+            suggestedContent: !<regular>
+              value: "0"
+            valueType: "java.lang.String"
+            uuid: "createIntValue_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isNumber(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "createIntValue_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "231276223B3DD65935C1F8594364B51A"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "createIntValue_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d3a16a23-e3bb-3e91-89fb-3a76bb53ad22"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "createDate"
+    returnType: "java.util.Date"
+    signature: "createDate() : java.util.Date"
+    throwsExceptions:
+    - "java.text.ParseException"
+    instructionFingerprint: "285BB5D4AB3CDAE23EB474CE31786976"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createDateWhenValidatorUtilsNotFutureValue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8F51D2DB3F543DE3243F1EB3B1EB0D0F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "AB9594771EB2765CB70823DEF3590D7D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          valueType: "java.util.Scanner"
+          uuid: "createDate_scanner1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "061CE64BF9C3C791E090C605CD729526"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "stringToDate"
+        parameters:
+        - name: "date"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "createDate_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.text.ParseException"
+        signature: "stringToDate(String): Date throws java.text.ParseException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.util.Date"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.util.Date"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.util.Date"
+          uuid: "createDate_date1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "7ED2781B0541BD198B7FADC89C831024"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "notFuture"
+        parameters:
+        - name: "date"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Date"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Date"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Date"
+            uuid: "createDate_date1"
+            fixed: false
+            equalsMethodPresent: true
+            explicitCastNeeded: false
+        signature: "notFuture(Date): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "createDate_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "91A9CF80B8279C04A4748E7D32E7A398"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "createDate_date1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bafc808b-b3ed-3217-a0ad-dbed50ce3c42"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "createDateWhenValidatorUtilsNotNotFutureValue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1FB86DDAD51E38C141FC8494173857D7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "AB9594771EB2765CB70823DEF3590D7D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          valueType: "java.util.Scanner"
+          uuid: "createDate_scanner1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "AB7DE2B5A66081576FC0FEA079D7715E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "stringToDate"
+        parameters:
+        - name: "date"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "createDate_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.text.ParseException"
+        signature: "stringToDate(String): Date throws java.text.ParseException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.util.Date"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.util.Date"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.util.Date"
+          uuid: "createDate_date1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "4E7F60117B280B71F7CF24A6189A83A7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "notFuture"
+        parameters:
+        - name: "date"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Date"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Date"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Date"
+            uuid: "createDate_date1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "notFuture(Date): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "createDate_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "AB9594771EB2765CB70823DEF3590D7D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "fa.training.utils.ScannerUtils"
+            method: "getInstance"
+            methodParameters: []
+          valueType: "java.util.Scanner"
+          uuid: "createDate_scanner2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "907A9AACD587558FC7C2CFB72F667B94"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "stringToDate"
+        parameters:
+        - name: "date"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "B"
+            suggestedContent: !<regular>
+              value: "B"
+            valueType: "java.lang.String"
+            uuid: "createDate_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.text.ParseException"
+        signature: "stringToDate(String): Date throws java.text.ParseException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.util.Date"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.util.Date"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.util.Date"
+          uuid: "createDate_date2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ValidatorUtils"
+      modelFingerprint: "39EBF8D745AC3336E8CDDD0637171888"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "fa.training.utils.ValidatorUtils"
+        uuid: "fa.training.utils.ValidatorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ValidatorUtils"
+        name: "notFuture"
+        parameters:
+        - name: "date"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Date"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Date"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Date"
+            uuid: "createDate_date2"
+            fixed: false
+            equalsMethodPresent: true
+            explicitCastNeeded: false
+        signature: "notFuture(Date): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "createDate_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "91A9CF80B8279C04A4748E7D32E7A398"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "createDate_date2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "71bda4f4-eb50-3ba4-a2f1-b7832d61d62c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

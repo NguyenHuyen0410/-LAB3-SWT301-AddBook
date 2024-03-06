@@ -1,0 +1,27 @@
+
+j
+java:S1192+"ODefine a constant instead of duplicating this literal "Enter Author: " 3 times.(’Äü¤ıÿÿÿÿ
+m
+java:S1192-"RDefine a constant instead of duplicating this literal "Enter publisher: " 3 times.(Ôá¤Ÿıÿÿÿÿ
+o
+java:S1192/"YDefine a constant instead of duplicating this literal "Enter publication year: " 3 times.(½Ñ¯®
+E	java:S106"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(¯ù¥Œ
+E	java:S106)"+Replace this use of System.out by a logger.(ÆÄ‘ÿÿÿÿÿ
+E	java:S106+"+Replace this use of System.out by a logger.(’Äü¤ıÿÿÿÿ
+E	java:S106-"+Replace this use of System.out by a logger.(Ôá¤Ÿıÿÿÿÿ
+@	java:S106/"+Replace this use of System.out by a logger.(½Ñ¯®
+E	java:S1061"+Replace this use of System.out by a logger.(úå‡Œÿÿÿÿÿ
+E	java:S1063"+Replace this use of System.out by a logger.(¢ğ¡áşÿÿÿÿ
+E	java:S1068"+Replace this use of System.out by a logger.(Ôá¤Ÿıÿÿÿÿ
+@	java:S106:"+Replace this use of System.out by a logger.(½Ñ¯®
+E	java:S106<"+Replace this use of System.out by a logger.(úå‡Œÿÿÿÿÿ
+E	java:S106>"+Replace this use of System.out by a logger.(’Äü¤ıÿÿÿÿ
+E	java:S106@"+Replace this use of System.out by a logger.(ûê¤¥üÿÿÿÿ
+E	java:S106B"+Replace this use of System.out by a logger.(ÕšËüÿÿÿÿ
+E	java:S106G"+Replace this use of System.out by a logger.(Ôá¤Ÿıÿÿÿÿ
+@	java:S106I"+Replace this use of System.out by a logger.(½Ñ¯®
+E	java:S106O"+Replace this use of System.out by a logger.(ÆÄ‘ÿÿÿÿÿ
+E	java:S106Q"+Replace this use of System.out by a logger.(’Äü¤ıÿÿÿÿ
+@	java:S106Y"+Replace this use of System.out by a logger.(µ‚ıô
+E	java:S106^"+Replace this use of System.out by a logger.(ì’„Ìûÿÿÿÿ

@@ -1,0 +1,12 @@
+
+t
+java:S1210D"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ËÙ°ûûÿÿÿÿ
+C
+java:S1185%"(Remove this method to simply inherit it.(ÇÓ Žüÿÿÿÿ
+U
+java:S1161%":Add the "@Override" annotation above this method signature(ÇÓ Žüÿÿÿÿ
+l
+java:S3457?"Q%n should be used in place of \n to produce the platform-specific line separator.(ž…‹£üÿÿÿÿ
+E	java:S106?"+Replace this use of System.out by a logger.(ž…‹£üÿÿÿÿ
+T
+java:S1117E"9Rename "volumn" which hides the field declared at line 9.(Ðøß§úÿÿÿÿ

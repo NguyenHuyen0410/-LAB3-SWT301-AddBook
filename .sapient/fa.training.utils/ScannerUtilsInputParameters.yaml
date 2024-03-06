@@ -1,0 +1,79 @@
+---
+modelFingerprint: "1117E3C18F11837B231DE29333DAF447"
+methods:
+- method:
+    name: "getInstance"
+    returnType: "java.util.Scanner"
+    signature: "getInstance() : java.util.Scanner"
+    instructionFingerprint: "F562A967CD960FDBF1C1D6FEB65543FA"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getInstanceWhenScannerIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "13C83BA374DB57F2C074684D62961719"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "0DFA7C9E19398EA80257D62238C3B9ED"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Scanner"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_field_return>
+                target: "java.lang.System"
+                fieldName: "in"
+              suggestedContent: !<static_field_return>
+                target: "java.lang.System"
+                fieldName: "in"
+              valueType: "java.io.InputStream"
+              uuid: "getInstance_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.util.Scanner"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_field_return>
+                target: "java.lang.System"
+                fieldName: "in"
+              valueType: "java.io.InputStream"
+              uuid: "getInstance_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.util.Scanner"
+        uuid: "getInstance_scanner1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f8f4005-0525-3876-87c0-85121e374441"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

@@ -1,0 +1,211 @@
+---
+modelFingerprint: "64EB83169F4DE020FC63CA4FD9939BA7"
+methods:
+- method:
+    name: "getChoice"
+    returnType: "int"
+    signature: "getChoice(java.util.List<java.lang.String>) : int"
+    instructionFingerprint: "DF48C81AF25E85528B7B82D26C3A1C7E"
+    parametersTypes:
+    - "java.util.List"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getChoiceWhenOptionsIsNotEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "786B7A3F3CBCC9573EF395524C03A0A4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "options"
+      modelFingerprint: "2D4B7571178191F4E3B0401BB41A975D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "Option 1"
+            valueType: "java.lang.String"
+            uuid: "getChoice_list1-item0"
+            fixed: true
+            collectionUuid: "getChoice_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "Option 2"
+            valueType: "java.lang.String"
+            uuid: "getChoice_list1-item1"
+            fixed: true
+            collectionUuid: "getChoice_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "Option 3"
+            valueType: "java.lang.String"
+            uuid: "getChoice_list1-item2"
+            fixed: true
+            collectionUuid: "getChoice_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "Option 1"
+            valueType: "java.lang.String"
+            uuid: "getChoice_list1-item0"
+            fixed: true
+            collectionUuid: "getChoice_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "Option 2"
+            valueType: "java.lang.String"
+            uuid: "getChoice_list1-item1"
+            fixed: true
+            collectionUuid: "getChoice_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          - sapientType: "BASIC"
+            content: !<regular>
+              value: "Option 3"
+            valueType: "java.lang.String"
+            uuid: "getChoice_list1-item2"
+            fixed: true
+            collectionUuid: "getChoice_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "java.lang.String"
+        uuid: "getChoice_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ScannerUtils"
+      modelFingerprint: "7C1A2B3B406FA7DD40A39B4AA87F6A73"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "fa.training.utils.ScannerUtils"
+        uuid: "fa.training.utils.ScannerUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "fa.training.utils.ScannerUtils"
+        name: "getInstance"
+        parameters: []
+        signature: "getInstance(): Scanner"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.util.Scanner"
+            parameters:
+            - name: "source"
+              value:
+                sapientType: "MOCK"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.Readable"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.Readable"
+                uuid: "getChoice_scanner1-source"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.util.Scanner"
+            parameters:
+            - name: "source"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.Readable"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.Readable"
+                uuid: "getChoice_scanner1-source"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.util.Scanner"
+          uuid: "getChoice_scanner1"
+          fixed: false
+          nameForMock: "Scanner"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8E4E4A3F04320A5F313F9B77CB2C7276"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "getChoice_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d2f284c4-a01f-3f3f-88f5-eed7f01f8699"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getChoiceWhenOptionsIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3018DE41BE6D87BC3B170A5F2998249E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3eeb0118-42e5-34db-87c8-0024c70fd037"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

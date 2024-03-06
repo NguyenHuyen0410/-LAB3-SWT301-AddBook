@@ -1,0 +1,272 @@
+---
+modelFingerprint: "068799291B38776363CA2C3B37B4098A"
+methods:
+- method:
+    name: "isValue"
+    returnType: "boolean"
+    signature: "isValue(java.lang.String) : boolean"
+    instructionFingerprint: "2DDED89FD65F6A883AAAEA39A24FD027"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isValueWhenMatcherMatches"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2C08F8C4052058DD592E3793719108CF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "64D852C7B866F6C41534A18E7B0596BD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.String"
+        uuid: "isValue_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isValue_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b5bdae3f-755d-3d74-bec8-d3b32130d1f4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    lastExecutionStatus: "PASSED"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isValueWhenMatcherNotMatches"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CB2D008ECCACD51CCAA096BE9477473B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "891428A06F90BEEEE7F4A583E9554BB8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "<valid input value>"
+        suggestedContent: !<regular>
+          value: "<valid input value>"
+        valueType: "java.lang.String"
+        uuid: "isValue_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "26F354D57EDB6DE30F14FF7FA23B655D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isValue_boolean1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b917b161-7d9d-37e8-a94a-5c8a554ef2ce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    lastExecutionStatus: "PASSED"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "isNumber"
+    returnType: "boolean"
+    signature: "isNumber(java.lang.String) : boolean"
+    instructionFingerprint: "AFF2E08BCF4A0C92AB6049F0617BD78A"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isNumberWhenMatcherMatches"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "ED4A5A955B1F0651E149C095D0CDF68C"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "eea09806-4e6e-3c13-ac88-fb9d0c5a67bf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isNumberWhenMatcherNotMatches"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "33E296061B4BF3BAC18C57A5B1EEB7E5"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "4f1da29c-9433-3607-b107-348203d61fc4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "dateToString"
+    returnType: "java.lang.String"
+    signature: "dateToString(java.util.Date) : java.lang.String"
+    instructionFingerprint: "998A865D2696964B01766998D9F52D19"
+    parametersTypes:
+    - "java.util.Date"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "dateToStringTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "95B83FC94E70B9EA79650F0C77FABFB7"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "dfb3c96e-f1dc-3f56-b6c9-674e870c5c61"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "stringToDate"
+    returnType: "java.util.Date"
+    signature: "stringToDate(java.lang.String) : java.util.Date"
+    throwsExceptions:
+    - "java.text.ParseException"
+    instructionFingerprint: "6049DAEECD5E92B39919B5DB6CD3772F"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "stringToDateTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "57AC1A350411E5F258CADD804A4A5895"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "f8aaa478-5f03-32c2-a048-688d53620d65"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "notFuture"
+    returnType: "boolean"
+    signature: "notFuture(java.util.Date) : boolean"
+    instructionFingerprint: "B046A6ED5EEA2FA3C7C3FA4370F75570"
+    parametersTypes:
+    - "java.util.Date"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "notFutureWhenDateNotAfterCurrentDate"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C7474B77DAC301C8E4A7D995B3AA3102"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "bafc2da0-8eae-331a-aaaf-8e09de20f880"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "notFutureWhenDateAfterCurrentDate"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A0139DFA0E5AFCC9989F6124D8E4CA68"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4bc7e543-f81d-3389-ba01-d011bc5c458a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
