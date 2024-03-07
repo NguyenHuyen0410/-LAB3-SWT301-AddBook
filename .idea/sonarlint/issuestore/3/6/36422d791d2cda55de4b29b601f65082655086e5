@@ -1,13 +1,93 @@
 
-T
-java:S5976G"7Replace these 30 tests with a single Parameterized one.(©Õöé8ôŸŸ¥á1
-€
-java:S1607"^Either add an explanation about why this test is skipped or remove the "@Disabled" annotation.(’°÷‰úÿÿÿÿ8õŸŸ¥á1
-z
-java:S1607#"^Either add an explanation about why this test is skipped or remove the "@Disabled" annotation.(ïÀÙ28öŸŸ¥á1
-€
-java:S1607)"^Either add an explanation about why this test is skipped or remove the "@Disabled" annotation.(îÂ§êüÿÿÿÿ8öŸŸ¥á1
-z
-java:S1607/"^Either add an explanation about why this test is skipped or remove the "@Disabled" annotation.(îöÏ#8öŸŸ¥á1
-{
-java:S16075"^Either add an explanation about why this test is skipped or remove the "@Disabled" annotation.(²ä½ñ8÷ŸŸ¥á1
+C
+java:S2699"-Add at least one assertion to this test case.(á¤‚
+J
+java:S2699"-Add at least one assertion to this test case.(¿Ş¨8€»ó¹á1
+O
+java:S2699""-Add at least one assertion to this test case.(Í¶¬Îüÿÿÿÿ8•¿ş¹á1
+O
+java:S2699)"-Add at least one assertion to this test case.(º†šµùÿÿÿÿ8–ğ‚ºá1
+O
+java:S26991"-Add at least one assertion to this test case.(åÌ°€øÿÿÿÿ8áÑ‡ºá1
+B
+java:S2699e"-Add at least one assertion to this test case.(ïÀÙ2
+H
+java:S2699k"-Add at least one assertion to this test case.(îÂ§êüÿÿÿÿ
+B
+java:S2699p"-Add at least one assertion to this test case.(îöÏ#
+J
+java:S2699u"-Add at least one assertion to this test case.(²ä½ñ8÷¸”á1
+J
+java:S2699z"-Add at least one assertion to this test case.(ØÔ™û8ıº¸”á1
+O
+java:S2699"-Add at least one assertion to this test case.(­·­µúÿÿÿÿ8§œÌ¥á1
+K
+java:S2699‡"-Add at least one assertion to this test case.(©Õöé8¨œÌ¥á1
+P
+java:S2699"-Add at least one assertion to this test case.(•ÊÍşÿÿÿÿ8¨œÌ¥á1
+K
+java:S2699™"-Add at least one assertion to this test case.(Ú•à’8¨œÌ¥á1
+K
+java:S2699"-Add at least one assertion to this test case.(×„½8©œÌ¥á1
+K
+java:S2699¦"-Add at least one assertion to this test case.(±ˆÀ×8©œÌ¥á1
+K
+java:S2699¯"-Add at least one assertion to this test case.(ŞåèÃ8©œÌ¥á1
+K
+java:S2699¸"-Add at least one assertion to this test case.(¥Ï×¥8ªœÌ¥á1
+K
+java:S2699Á"-Add at least one assertion to this test case.(ÓªÊÑ8«œÌ¥á1
+P
+java:S2699Ê"-Add at least one assertion to this test case.(ã¾§—ÿÿÿÿÿ8«œÌ¥á1
+P
+java:S2699Ó"-Add at least one assertion to this test case.(ù”²ıÿÿÿÿ8¬œÌ¥á1
+P
+java:S2699Ü"-Add at least one assertion to this test case.(Ç¦ä¸şÿÿÿÿ8­œÌ¥á1
+P
+java:S2699å"-Add at least one assertion to this test case.(çˆñûÿÿÿÿ8®œÌ¥á1
+P
+java:S2699î"-Add at least one assertion to this test case.(Î˜¢áşÿÿÿÿ8®œÌ¥á1
+K
+java:S2699÷"-Add at least one assertion to this test case.(¸†õ8®œÌ¥á1
+P
+java:S2699€"-Add at least one assertion to this test case.(šñŒ©øÿÿÿÿ8¯œÌ¥á1
+P
+java:S2699‰"-Add at least one assertion to this test case.(”Î®íşÿÿÿÿ8¯œÌ¥á1
+K
+java:S2699’"-Add at least one assertion to this test case.(ŒŠ³€8¯œÌ¥á1
+P
+java:S2699›"-Add at least one assertion to this test case.(Åñí—øÿÿÿÿ8¯œÌ¥á1
+P
+java:S2699¤"-Add at least one assertion to this test case.(Øü‹Áúÿÿÿÿ8°œÌ¥á1
+P
+java:S2699­"-Add at least one assertion to this test case.(Ö¿Ÿ‘øÿÿÿÿ8°œÌ¥á1
+P
+java:S2699¶"-Add at least one assertion to this test case.(îá– ùÿÿÿÿ8°œÌ¥á1
+P
+java:S2699¿"-Add at least one assertion to this test case.(´è½ıùÿÿÿÿ8°œÌ¥á1
+K
+java:S2699È"-Add at least one assertion to this test case.(ŞúÃò8°œÌ¥á1
+K
+java:S2699Ñ"-Add at least one assertion to this test case.(ñĞù8±œÌ¥á1
+K
+java:S2699Ú"-Add at least one assertion to this test case.(Âš¥º8±œÌ¥á1
+K
+java:S2699ã"-Add at least one assertion to this test case.(¡¨®8±œÌ¥á1
+K
+java:S2699ì"-Add at least one assertion to this test case.(•ê¢ı8±œÌ¥á1
+K
+java:S2699õ"-Add at least one assertion to this test case.(æ¥²Ö8²œÌ¥á1
+K
+java:S2699ş"-Add at least one assertion to this test case.(ÖÏô8²œÌ¥á1
+J
+java:S2699‡"-Add at least one assertion to this test case.(ÌÙ‡8²œÌ¥á1
+K
+java:S2699"-Add at least one assertion to this test case.(ª‘®†8³œÌ¥á1
+K
+java:S2699™"-Add at least one assertion to this test case.(Ùè‰Ö8³œÌ¥á1
+S
+java:S5976"6Replace these 4 tests with a single Parameterized one.(á¤‚8œ¿ş¹á1
+X
+java:S5976D"6Replace these 3 tests with a single Parameterized one.(÷‡·éûÿÿÿÿ8×Ó¿ºá1
+U
+java:S5976‡"7Replace these 30 tests with a single Parameterized one.(©Õöé8ºœÌ¥á1

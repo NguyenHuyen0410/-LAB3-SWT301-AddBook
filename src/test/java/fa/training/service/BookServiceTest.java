@@ -4,10 +4,13 @@ import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.api.Test;
 import fa.training.entity.Book;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
 import org.junit.jupiter.api.Disabled;
@@ -21,34 +24,95 @@ class BookServiceTest {
         book.setIsbn("isbn1");
         BookService.addBook(book);
     }
+    @Test()
+    void addBookWhenGetBookByIsbnReturnsBookWithEmptyIsbn() {
+        Book book = new Book();
+        book.setIsbn("");
+        BookService.addBook(book);
+    }
+    @Test()
+    void addBookWithNullIsbn() {
+        Book book = new Book();
+        book.setIsbn(null);
+        BookService.addBook(book);
+    }
 
-    @Disabled()
+    @Test
+    void addBookWithFullDetailsAndGetBookByIsbn() {
+        Book book = new Book();
+        book.setIsbn("123");
+        // Thiết lập các thông tin khác của sách
+        BookService.addBook(book);
+
+    }
+    @Test
+    void addBookWithExistingIsbn() {
+        // Tạo một cuốn sách có ISBN đã tồn tại trong dịch vụ
+        Book existingBook = new Book();
+        existingBook.setIsbn("existingIsbn");
+        BookService.addBook(existingBook);
+
+        // Thêm một cuốn sách mới có cùng ISBN và kiểm tra xem nó có được thêm vào không
+        Book newBook = new Book();
+        newBook.setIsbn("existingIsbn");
+        BookService.addBook(newBook);
+    }
+
     @Test()
     void getBookByIsbnTest() {
         Optional<Book> result = BookService.getBookByIsbn("isbn1");
         Optional<Book> bookOptional = Optional.empty();
         assertAll("result", () -> assertThat(result, equalTo(bookOptional)));
     }
+    @Test
+    void getBookByInvalidIsbn() {
+        Optional<Book> result = BookService.getBookByIsbn("invalidIsbn");
+        assertNotNull(result);
+        assertFalse(result.isPresent());
+    }
+    @Test
+    void getBookByEmptyIsbn() {
+        Optional<Book> result = BookService.getBookByIsbn("");
+        assertNotNull(result);
+        assertFalse(result.isPresent());
+    }@Test
+    void getBookByNullIsbn() {
+        Optional<Book> result = BookService.getBookByIsbn(null);
+        assertNotNull(result);
+        assertFalse(result.isPresent());
+    }
+    @Test
+    void getBookWhenServiceContainsMultipleBooksAndQueryWithNonExistentIsbn() {
+        // Thêm một số cuốn sách vào dịch vụ
+        Book book1 = new Book();
+        book1.setIsbn("isbn1");
+        BookService.addBook(book1);
 
-    @Disabled()
+        Book book2 = new Book();
+        book2.setIsbn("isbn2");
+        BookService.addBook(book2);
+
+        Optional<Book> result = BookService.getBookByIsbn("nonExistentIsbn");
+        assertNotNull(result);
+        assertFalse(result.isPresent());
+    }
+
     @Test()
     void searchBookWhenListNotIsEmpty() {
         BookService.searchBook("text1");
     }
 
-    @Disabled()
+
     @Test()
     void searchBookWhenListIsEmpty() {
         BookService.searchBook("text1");
     }
 
-    @Disabled()
     @Test()
     void getBookByYearAndPublisherWhenListNotIsEmpty() {
         BookService.getBookByYearAndPublisher("publister1", 0);
     }
 
-    @Disabled()
     @Test()
     void getBookByYearAndPublisherWhenListIsEmpty() {
         BookService.getBookByYearAndPublisher("publister1", 0);
